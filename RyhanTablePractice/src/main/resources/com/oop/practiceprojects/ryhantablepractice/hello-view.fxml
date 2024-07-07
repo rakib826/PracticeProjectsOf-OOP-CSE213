@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.practiceprojects.ryhantablepractice.HelloController">
+   <children>
+      <TextField fx:id="nameTF" layoutX="98.0" layoutY="60.0" />
+      <Label layoutX="40.0" layoutY="64.0" text="Name" />
+      <TextField fx:id="idTF" layoutX="98.0" layoutY="115.0" />
+      <Label layoutX="56.0" layoutY="119.0" text="ID" />
+      <TextField fx:id="courseTF" layoutX="406.0" layoutY="115.0" />
+      <Label layoutX="348.0" layoutY="119.0" text="Course" />
+      <TextField fx:id="sectionTF" layoutX="406.0" layoutY="67.0" />
+      <Label layoutX="348.0" layoutY="71.0" text="Section" />
+      <TableView fx:id="infoTableView" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="578.0">
+        <columns>
+          <TableColumn fx:id="idTC" prefWidth="140.800048828125" text="ID" />
+          <TableColumn fx:id="nameTC" prefWidth="126.39996337890625" text="Name" />
+            <TableColumn fx:id="sectionTC" prefWidth="149.5999755859375" text="Section" />
+            <TableColumn fx:id="courseTC" minWidth="0.0" prefWidth="163.20001220703125" text="Course" />
+        </columns>
+      </TableView>
+      <Button layoutX="266.0" layoutY="151.0" mnemonicParsing="false" onAction="#addOnAction" text="Add" />
+   </children>
+</AnchorPane>
